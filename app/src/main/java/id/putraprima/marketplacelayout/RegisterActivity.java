@@ -6,26 +6,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
     }
 
-    public void clickUser(View view){
+    public void clickBack2(View view){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
-    public void clickServiceProvider(View view){
-        Intent intent = new Intent(this, LoginActivity.class);
+    public void clickNext(View view){
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 
-    public void clickEnterAsAGuest1(View view){
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-    }
+
 }
